@@ -10,7 +10,15 @@
 </style>
 <script>
 	var i = 20;
-
+	while(i >= 10){
+		if(i%2==0){
+			document.write("<p class = 'blue'>" + i + "</p>"); //i의 값이 짝수면 실행
+		}
+		else{
+			document.write("<p class = 'red'>" + i + "</p>");
+		}
+		i--;
+	}
 </script>
 </head>
 <body>
