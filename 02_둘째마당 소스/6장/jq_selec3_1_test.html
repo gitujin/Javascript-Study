@@ -6,7 +6,13 @@
 <script src="js/jquery.js"></script>
 <script>
 $(function(){
-	
+	var result_1 = $("sec_1").html(); //id 값이 "sec_1"인 요소의 하위 요소를 문자열로 가져와 result_1에 저장
+	console.log(result_1); 
+	$("#sec_1 p").html("<a href=\"#\">Text1</a>"); //id 값이 "sec_1"인 요소의 하위 요소 중 <p> 요소의 하위 요소를 새 요소로 바꿈
+
+	var result_2 = $("#sec_2").text(); //id 값이 "sec_2"인 요소의 텍스트를 result_2에 저장
+	console.log(result_2);
+	$("#sec_2 h2").text("text()");  //id 값이 "sec_2"인 요소의 하위 요소 중 <h2>요소의 하위 요소를 모두 제거. 그런 다음 새로운 텍스트 생성
 });
 </script>
 </head>
